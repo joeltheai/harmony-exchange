@@ -15,7 +15,7 @@ export default function Home() {
               <Link href="/signup">Get started</Link>
             </Button>
 
-            <Link href="/">
+            <Link href="/about">
               <Button
                 variant="ghost"
                 className=" bg-slate-100 hover:bg-slate-200"
@@ -24,8 +24,10 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+          <MaxWidthWrapper>
+            <div className="mt-24">Hello</div>
+          </MaxWidthWrapper>
         </div>
-
       </div>
     </>
   );
