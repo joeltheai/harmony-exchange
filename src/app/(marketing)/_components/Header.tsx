@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import LoginButton from "../_components/LoginButton";
 
 const Header = () => {
   return (
     <div className=" bg-red-700 p-4">
       <MaxWidthWrapper>
-        <div className=" flex">
+        <div className=" flex flex-row justify-between">
           <header className=" text-white">
             <div className="container">
               <Link href="/">
@@ -19,6 +20,7 @@ const Header = () => {
               </Link>
             </div>
           </header>
+          <LoginButton />
         </div>
       </MaxWidthWrapper>
     </div>
