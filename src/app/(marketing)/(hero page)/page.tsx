@@ -32,7 +32,7 @@ export default function Home() {
 
           <MaxWidthWrapper>
             <div className=" items-center justify-center gap-11 text-center sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-row lg:px-20">
-              <p className=" justify-start  text-xl md:text-xl lg:pl-10 lg:text-left ">
+              <div className=" justify-start  text-xl md:text-xl lg:pl-10 lg:text-left ">
                 Lorem ipsum dolor sit amet consectetur adipisicing <br />
                 elit. Quibusdam in esse quidem maxime debitis et <br />
                 itaque cupiditate sunt eaque. Eaque in tenetur <br />
@@ -41,7 +41,7 @@ export default function Home() {
                 vitae corrupti ipsam consequuntur totam. Soluta quo <br />
                 sit doloremque facilis aliquid, eveniet aspernatur <br />
                 harum laborum cupiditate !<br />
-              </p>
+              </div>
               <Image
                 className=" items-center justify-center"
                 src="/hero/38-Teacher.png"
@@ -57,7 +57,7 @@ export default function Home() {
 
           <Image
             className="mt-24"
-            src="/image 2.png"
+            src="/hero/image 2.png"
             width={350}
             height={350}
             alt="logo_header"
