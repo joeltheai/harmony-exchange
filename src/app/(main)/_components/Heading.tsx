@@ -14,7 +14,7 @@ const Heading = () => {
         MUSIC
       </h1>
       <h3 className=" ">
-        Enhance your ability to read, write, and play music through<br></br> effective
+        Enhance your ability to read, write, and play music through effective
         exercises and interactive tools. For free, forever.
       </h3>
 
