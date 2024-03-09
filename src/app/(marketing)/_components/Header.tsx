@@ -5,15 +5,15 @@ import LoginButton from "../_components/LoginButton";
 
 const Header = () => {
   return (
-    <div className=" bg-red-700 p-4">
+    <div className="fixed z-50 w-full bg-red-700 p-4">
       <MaxWidthWrapper>
         <div className=" flex flex-row justify-between">
-          <header className=" text-white">
+          <header className="flex items-center justify-center text-center text-white">
             <div className="container">
               <Link href="/">
                 <Image
                   src="/logo_header.svg"
-                  width={50}
+                  width={60}
                   height={40}
                   alt="logo_header"
                 />
