@@ -13,12 +13,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Teacher {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  name    String?
-  skill   String
-
+  id          String  @id @default(uuid())
+  userId      String  @unique
+  name        String?
+  skill       String
+  isApproved  Boolean @default(false)
+  description String
 }
-
