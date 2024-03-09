@@ -5,7 +5,7 @@ import LoginButton from "../_components/LoginButton";
 
 const Header = () => {
   return (
-    <div className="fixed z-50 w-full bg-red-700 p-4">
+    <div className="fixed z-50 w-full bg-red-700 p-4 ">
       <MaxWidthWrapper>
         <div className=" flex flex-row justify-between">
           <header className="flex items-center justify-center text-center text-white">

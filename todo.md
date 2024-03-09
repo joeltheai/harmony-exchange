@@ -1,9 +1,9 @@
 
 # Teacher booking
-- add a skill filter to teacher book
-- create a teacher profile page
-- create booking interface
-  - stripe (payment)
+- add a skill filter to teacher book  x
+- create a teacher profile page  x
+- create booking interface  x
+  - stripe (payment)  
 
 # Student - after booking
 - View current teachers
