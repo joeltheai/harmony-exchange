@@ -45,7 +45,7 @@ const Page = () => {
   );
 
   return (
-    <div className="flex h-screen  justify-center">
+    <div className="flex  justify-center">
       {isLoading ? (
         // DaisyUI Spinner centered
         <div className=" flex justify-center">
@@ -53,10 +53,19 @@ const Page = () => {
         </div>
       ) : (
         <div className="flex flex-col items-center gap-4 text-white">
+          <div className="  mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-800 md:text-5xl lg:text-6xl ">
+            {" "}
+            Welcome to the Teacher-connect section
+          </div>
+          <div className="mb-6 text-lg font-normal text-gray-500 dark:text-gray-400 sm:px-16 lg:text-xl xl:px-48">
+            Here you can find teachers for your desired skill
+          </div>
           {/* DaisyUI Select Dropdown for skill filtering */}
           <div className="form-control w-full max-w-xs">
             <label className="label">
-              <span className="label-text">Select Skill</span>
+              <span className="label-text">
+                Select Skill you want to learn here :
+              </span>
             </label>
             <select
               className="select select-bordered"
@@ -70,12 +79,15 @@ const Page = () => {
             </select>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {filteredTeachers.length > 0 ? (
               filteredTeachers
                 .filter((teacher) => teacher.isApproved)
                 .map((teacher, index) => (
-                  <div key={index} className="card w-96 bg-base-100 shadow-xl">
+                  <div
+                    key={index}
+                    className="card w-96 bg-base-100 pb-5 pt-5 shadow-xl"
+                  >
                     {/* Card content */}
                     <div className="card-body items-center text-center text-white">
                       <Link href={`/teacher/${teacher.id}`}>

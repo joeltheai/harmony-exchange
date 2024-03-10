@@ -10,10 +10,12 @@ const Footer = () => {
         <MaxWidthWrapper>
           <div className="flex justify-between">
             <div>
-              <Link href="/about" className="mr-4">
+              <Link href="/about" className="link-hover link mr-4">
                 About
               </Link>
-              <Link href="/mission">Mission</Link>
+              <Link href="/mission" className="link-hover link">
+                Mission
+              </Link>
             </div>
             <div className="flex flex-row">
               <a
