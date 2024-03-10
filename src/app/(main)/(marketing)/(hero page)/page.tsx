@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Heading from "../_components/Heading";
+import Heading from "../../_components/Heading";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import CascadingStuff from "../_components/Cascading";
-import ChatBubblesComp from "../_components/ChatBubbles";
+import CascadingStuff from "../../_components/Cascading";
+import ChatBubblesComp from "../../_components/ChatBubbles";
+import { currentUser } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -54,6 +55,14 @@ export default function Home() {
           <div className="mt-24"></div>
 
           <ChatBubblesComp />
+
+          <Image
+            className="mt-24"
+            src="https://utfs.io/f/24e95b8c-9b7d-4fce-92d1-195af0c111c7-2ip.png"
+            width={350}
+            height={350}
+            alt="logo_header"
+          />
 
           <Image
             className="mt-24"
