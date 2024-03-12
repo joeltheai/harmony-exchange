@@ -40,6 +40,15 @@ const MainLinks = () => {
                 Quiz
               </Link>
             </li>
+
+            <li>
+              <Link
+                href="/toolss"
+                className={`p-2 text-white ${isActive("toolss") ? "rounded-md bg-emerald-400 p-2 font-semibold text-green-900" : "transition hover:rounded-md hover:bg-sky-500/50 hover:p-2 hover:underline"}`}
+              >
+                Tools
+              </Link>
+            </li>
             <li>
               <Link
                 href="/teacher-connect"

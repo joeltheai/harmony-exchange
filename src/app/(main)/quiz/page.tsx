@@ -1,10 +1,14 @@
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+
 const QuizPage = () => {
     return ( 
-        <div>
-            <div className=""></div>
-            <div>Quiz Page</div>
-            <div>Under construction</div>
-        </div>
+        <MaxWidthWrapper>
+            <div>
+                <div className=""></div>
+                <div>Quiz Page</div>
+                <div>Under construction</div>
+            </div>
+        </MaxWidthWrapper>
      );
 }
  

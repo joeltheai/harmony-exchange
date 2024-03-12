@@ -67,16 +67,23 @@ const Page = () => {
                 Select Skill you want to learn here :
               </span>
             </label>
-            <select
-              className="select select-bordered"
-              value={selectedSkill}
-              onChange={handleSkillChange}
-            >
-              <option value="all">All</option>
-              <option value="Guitar">Guitar</option>
-              <option value="Violin">Violin</option>
-              <option value="Piano">Piano</option>
-            </select>
+            <div className="flex flex-row items-center gap-2">
+              <select
+                className="select select-bordered w-full px-4 py-2"
+                value={selectedSkill}
+                onChange={handleSkillChange}
+              >
+                <option value="all">All</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Violin">Violin</option>
+                <option value="Piano">Piano</option>
+              </select>
+              <Link href="/teacher" className="">
+                <button className=" btn btn-outline btn-accent ">
+                  or apply to become a teacher
+                </button>
+              </Link>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
