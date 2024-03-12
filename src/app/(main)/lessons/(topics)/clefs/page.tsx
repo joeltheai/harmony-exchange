@@ -82,7 +82,7 @@ const ClefsPage = () => {
       </p>
       <p className="mb-4">
         The alto clef is primarily utilized for the viola due to its limited
-        application. However, it's common to substitute either the treble clef
+        application. However, it&apos;s common to substitute either the treble clef
         or the bass clef instead.
       </p>
 
