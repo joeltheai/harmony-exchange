@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex flex-col">
               <Image
                 src="https://utfs.io/f/53bc8a8d-9d23-47dd-afe6-a27334556c3a-1d.png"
-                alt="an image"
+                alt="an image 1"
                 width={400}
                 height={400}
               />
@@ -43,7 +43,7 @@ export default function Home() {
             <div>
               <Image
                 src="https://utfs.io/f/f2d9b2aa-a563-428e-84a2-2eafe6489e12-1e.png "
-                alt="an image"
+                alt="an image 2"
                 width={400}
                 height={400}
               />
@@ -52,7 +52,7 @@ export default function Home() {
             <div>
               <Image
                 src="https://utfs.io/f/dff4b677-c7e5-442c-b838-cea689f68b12-1f.png "
-                alt="an image"
+                alt="an image 3"
                 width={400}
                 height={400}
               />
