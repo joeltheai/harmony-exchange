@@ -29,10 +29,39 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-24"></div>
+          <div className=""></div>
+          <div className="flex flex-row ">
+            <div className="flex flex-col">
+              <Image
+                src="https://utfs.io/f/53bc8a8d-9d23-47dd-afe6-a27334556c3a-1d.png"
+                alt="an image"
+                width={400}
+                height={400}
+              />
+              <div>EXPLORE OUR LESSONS</div>
+            </div>
+            <div>
+              <Image
+                src="https://utfs.io/f/f2d9b2aa-a563-428e-84a2-2eafe6489e12-1e.png "
+                alt="an image"
+                width={400}
+                height={400}
+              />
+              <div>LEARNING THROUGH EXERCISES</div>
+            </div>
+            <div>
+              <Image
+                src="https://utfs.io/f/dff4b677-c7e5-442c-b838-cea689f68b12-1f.png "
+                alt="an image"
+                width={400}
+                height={400}
+              />
+              <div>CONNECT WITH TEACHERS</div>
+            </div>
+          </div>
 
-          <MaxWidthWrapper>
-            <div className=" items-center justify-center gap-11 text-center sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-row lg:px-20">
+          {/* <MaxWidthWrapper>
+            <div className=" mt-40 items-center justify-center gap-11 text-center sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-row lg:px-20">
               <div className=" justify-start  text-xl md:text-xl lg:pl-10 lg:text-left ">
                 Lorem ipsum dolor sit amet consectetur adipisicing <br />
                 elit. Quibusdam in esse quidem maxime debitis et <br />
@@ -51,26 +80,18 @@ export default function Home() {
                 alt="logo_header"
               />
             </div>
-          </MaxWidthWrapper>
+          </MaxWidthWrapper> */}
           <div className="mt-24"></div>
 
           <ChatBubblesComp />
 
-          <Image
-            className="mt-24"
-            src="https://utfs.io/f/24e95b8c-9b7d-4fce-92d1-195af0c111c7-2ip.png"
-            width={350}
-            height={350}
-            alt="logo_header"
-          />
-
-          <Image
+          {/* <Image
             className="mt-24"
             src="/hero/image 2.png"
             width={350}
             height={350}
             alt="logo_header"
-          />
+          /> */}
 
           <CascadingStuff />
 
