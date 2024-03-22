@@ -10,8 +10,8 @@ import { currentUser } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <>
-      <div className=" mt-28 flex flex-col  ">
+    <div className="">
+      <div className=" mt-28 flex flex-col ">
         <div className=" flex flex-col items-center justify-center  text-center">
           <Heading />
           <div className="mt-14 flex flex-row gap-8">
@@ -98,6 +98,6 @@ export default function Home() {
           {/* <a className="card title link link-accent">Im a simple link</a> */}
         </div>
       </div>
-    </>
+    </div>
   );
 }

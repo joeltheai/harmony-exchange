@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ClefsPage = () => {
   return (
     <div className="mx-auto max-w-4xl p-5">
@@ -16,12 +18,27 @@ const ClefsPage = () => {
         middle C is positioned on the second line of the staff. The treble clef
         symbol curves around the line where the note G is situated.
       </p>
+
+      <Image
+        src="/images/3.Clefs/1.Treble Clef.1.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         Comparing the notes in the treble clef to those on the piano reveals the
         placements of the notes C and G on the staff. Keeping in mind the
         positions of C and G aids in interpreting the remaining notes on the
         staff, facilitating easier reading.
-      </p>
+      </p> 
+      <Image
+        src="/images/3.Clefs/1.Treble Clef.2.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         The treble clef serves as a valuable tool for notating notes positioned
         above middle C. It finds application in songbooks and is particularly
@@ -36,12 +53,28 @@ const ClefsPage = () => {
         symbol, featuring two dots, encompasses the line corresponding to the
         note F.
       </p>
+
+      <Image
+        src="/images/3.Clefs/2.1.Bass Clef.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         When comparing the notes in the bass clef to those on the piano, pay
         attention to the placements of the notes C and F on the staff. Keeping
         in mind the positions of C and F can facilitate the reading of other
         notes on the staff.
       </p>
+
+      <Image
+        src="/images/3.Clefs/2.2.Bass Clef.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         The bass clef is employed for notating notes positioned below middle C,
         making it particularly suitable for low-pitched instruments like the
@@ -54,6 +87,14 @@ const ClefsPage = () => {
         upper position and the other with the bass clef in the lower position.
         These staves are joined by a vertical line on the left side and a brace.
       </p>
+
+      <Image
+        src="/images/3.Clefs/3.1.Grand Staff.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         Middle C falls between the two staves and is written on the first ledger
         line below the upper staff or the first ledger line of the lowermost
@@ -61,11 +102,27 @@ const ClefsPage = () => {
         note C. Remembering their positions make it easier to read the other
         notes on the staff.
       </p>
+
+      <Image
+        src="/images/3.Clefs/3.2.Grand Staff.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         Comparing the notes of the grand staff to those on the piano reveals
         that the notes around middle C can be notated in both the upper and
         lower staves, employing one or more ledger lines as necessary.
       </p>
+
+      <Image
+        src="/images/3.Clefs/3.3.Grand Staff.png"
+        alt="Natural Notes"
+        width={800}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         The grand staff is employed for instruments capable of producing both
         low and high pitches, serving as a common notation system for
@@ -80,12 +137,27 @@ const ClefsPage = () => {
         with the third line of the staff. Positioned at the center of the staff,
         the alto clef indicates the line where middle C is located.
       </p>
+
+      <Image
+        src="/images/3.Clefs/4.1.Alto Clef.png"
+        alt="Natural Notes"
+        width={300}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         The alto clef is primarily utilized for the viola due to its limited
-        application. However, it&apos;s common to substitute either the treble clef
-        or the bass clef instead.
+        application. However, it&apos;s common to substitute either the treble
+        clef or the bass clef instead.
       </p>
 
+      <Image
+        src="/images/3.Clefs/4.2.Alto Clef.png"
+        alt="Natural Notes"
+        width={700}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <h2 className="mb-3 text-2xl font-semibold">Tenor Clef</h2>
       <p className="mb-4">
         The tenor clef, a type of C clef, designates the fourth line of the

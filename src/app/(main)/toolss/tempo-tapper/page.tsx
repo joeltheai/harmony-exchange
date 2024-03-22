@@ -10,7 +10,7 @@ const TempoTapper = () => {
     const newTaps = [...taps, now];
 
     // Keep only the last few taps to calculate the BPM
-    const relevantTaps = newTaps.slice(-6);
+    const relevantTaps = newTaps.slice(-10);
     setTaps(relevantTaps);
 
     if (relevantTaps.length > 1) {
@@ -22,6 +22,7 @@ const TempoTapper = () => {
         intervals.length;
       const newBpm = 60000 / averageInterval;
       setBpm(Math.round(newBpm));
+      // setBpm((newBpm));
     }
   };
 
