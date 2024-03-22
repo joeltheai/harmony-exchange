@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 // Define the structure for a question
 type Question = {
@@ -198,46 +199,57 @@ const QuizForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
-      {quizQuestions.map((question, index) => (
-        <div key={index} className="card w-96 bg-base-100 p-4 shadow-xl">
-          <p className="text-lg font-semibold text-white">
-            {question.question}
-          </p>
-          {question.options.map((option, optionIndex) => (
-            <label key={optionIndex} className="label cursor-pointer">
-              <span className="label-text">{option}</span>
-              <input
-                type="radio"
-                name={`question-${index}`}
-                value={option}
-                onChange={() => handleOptionChange(index, option)}
-                className="radio checked:bg-blue-500"
-                checked={answers[index] === option}
-              />
-            </label>
-          ))}
-        </div>
-      ))}
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
-      {submitted && (
-        <div className="card w-96 bg-slate-100 p-4 shadow-xl">
-          <p>
-            Your score is {score}/{quizQuestions.length}.
-          </p>
-          <p>Correct answers:</p>
-          <ul>
-            {quizQuestions.map((question, index) => (
-              <li key={index}>
-                {index + 1}. {question.answer}
-              </li>
+    <MaxWidthWrapper>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col items-center gap-4 px-72"
+      >
+        {quizQuestions.map((question, index) => (
+          <div
+            key={index}
+            className=" card w-full bg-base-100 p-12   shadow-xl"
+          >
+            <div className=" font-bold text-slate-400">
+              Question {index + 1}
+            </div>
+            <p className="text-lg font-semibold text-white">
+              {question.question}
+            </p>
+            {question.options.map((option, optionIndex) => (
+              <label key={optionIndex} className="label cursor-pointer">
+                <span className="label-text">{option}</span>
+                <input
+                  type="radio"
+                  name={`question-${index}`}
+                  value={option}
+                  onChange={() => handleOptionChange(index, option)}
+                  className="radio checked:bg-blue-500"
+                  checked={answers[index] === option}
+                />
+              </label>
             ))}
-          </ul>
-        </div>
-      )}
-    </form>
+          </div>
+        ))}
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
+        {submitted && (
+          <div className="card w-96 bg-slate-100 p-4 shadow-xl">
+            <p>
+              Your score is {score}/{quizQuestions.length}.
+            </p>
+            <p>Correct answers:</p>
+            <ul>
+              {quizQuestions.map((question, index) => (
+                <li key={index}>
+                  {index + 1}. {question.answer}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </form>
+    </MaxWidthWrapper>
   );
 };
 

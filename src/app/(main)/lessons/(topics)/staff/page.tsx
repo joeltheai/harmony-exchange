@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const StaffLessons = () => {
   return (
     <div className="mx-auto max-w-4xl p-5">
@@ -6,6 +8,14 @@ const StaffLessons = () => {
         The staff, also known as the stave, consists of five horizontal lines
         utilized in music notation.
       </p>
+
+      <Image
+        src="/images/2.The staff/1.Staff position.1.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         Notes can be written either on these lines or within the spaces between
         them. The plural form of both &quot;staff&quot; and &quot;stave&quot; is
@@ -26,6 +36,14 @@ const StaffLessons = () => {
           center of the note, while a note written in a space occupies the
           entire space.
         </li>
+
+        <Image
+          src="/images/2.The staff/1.Staff position.2.png"
+          alt="Natural Notes"
+          width={600}
+          height={218}
+          className="mb-4 rounded-box"
+        />
         <li>
           Each note depicted on the staff corresponds to a natural note, with
           higher positions indicating higher pitches and lower positions
@@ -38,6 +56,14 @@ const StaffLessons = () => {
         <li>
           Additionally, notes aligned vertically are played simultaneously.
         </li>
+
+        <Image
+          src="/images/2.The staff/1.Staff position.3.png"
+          alt="Natural Notes"
+          width={300}
+          height={218}
+          className="mb-4 rounded-box"
+        />
       </ul>
 
       <h2 className="mb-3 text-2xl font-semibold">Ledger Lines</h2>
@@ -46,6 +72,14 @@ const StaffLessons = () => {
         Ledger lines are short lines that extend the staff when notes are too
         high or low to write on the staff itself:
       </p>
+
+      <Image
+        src="/images/2.The staff/2.Ledger Lines.png"
+        alt="Natural Notes"
+        width={600}
+        height={218}
+        className="mb-4 rounded-box"
+      />
       <p className="mb-4">
         You can use as many ledger lines as you need. Notes located just above
         and below the staff are written without ledger lines.
@@ -57,6 +91,14 @@ const StaffLessons = () => {
         bottom to top. This means that the first line refers to the bottom line,
         while the fifth line corresponds to the top line.
       </p>
+
+      <Image
+        src="/images/2.The staff/3.Lines and spaces.png"
+        alt="Natural Notes"
+        width={300}
+        height={218}
+        className="mb-4 rounded-box"
+      />
     </div>
   );
 };

@@ -52,7 +52,7 @@ const Page = () => {
           <div className=" loading loading-spinner loading-lg "></div>
         </div>
       ) : (
-        <div className="flex flex-col items-center gap-4 text-white">
+        <div className="flex flex-col items-center gap-4">
           <div className="  mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-800 md:text-5xl lg:text-6xl ">
             {" "}
             Welcome to the Teacher-connect section
@@ -93,12 +93,12 @@ const Page = () => {
                 .map((teacher, index) => (
                   <div
                     key={index}
-                    className="card w-96 bg-base-100 pb-5 pt-5 shadow-xl"
+                    className="bg-base-700 card w-96 pb-5 pt-5 shadow-xl"
                   >
                     {/* Card content */}
-                    <div className="card-body items-center text-center text-white">
+                    <div className="card-body items-center  text-center ">
                       <Link href={`/teacher/${teacher.id}`}>
-                        <p className="card-title text-white hover:underline">
+                        <p className="card-title  hover:underline">
                           {teacher.name}
                         </p>
                       </Link>
