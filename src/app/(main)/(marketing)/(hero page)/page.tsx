@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://utfs.io/f/f2d9b2aa-a563-428e-84a2-2eafe6489e12-1e.png "
+                src="https://utfs.io/f/f2d9b2aa-a563-428e-84a2-2eafe6489e12-1e.png"
                 alt="an image 2"
                 width={400}
                 height={400}
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="https://utfs.io/f/dff4b677-c7e5-442c-b838-cea689f68b12-1f.png "
+                src="https://utfs.io/f/dff4b677-c7e5-442c-b838-cea689f68b12-1f.png"
                 alt="an image 3"
                 width={400}
                 height={400}
