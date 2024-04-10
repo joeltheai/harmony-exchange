@@ -20,7 +20,7 @@ const questions: Question[] = [
     image: "https://utfs.io/f/c99ffdc9-7aae-47ee-812e-0c92dcd7ce3f-2q.png",
   },
   {
-    answer: "B♯",
+    answer: "B#",
     image: "https://utfs.io/f/487a3d66-ff9a-4058-b76e-c159e0ecce0f-6g2ek3.png",
   },
   {
