@@ -3,20 +3,74 @@ import Link from "next/link";
 
 const QuizPage = () => {
   return (
-    <MaxWidthWrapper>
-      <div className=" pl-64">
-        <div className="p-4">
-          <Link href="/quiz/pitchquiz" passHref>
-            <div className=" card w-96 transform cursor-pointer bg-base-100 shadow-xl transition duration-75 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-base-200">
-              <div className="card-body">
-                <h2 className="card-title">The Pitch Quiz</h2>
-                <p>Test your knowledge on Pitch concepts</p>
-              </div>
+    <div className="mt-12">
+      <MaxWidthWrapper>
+        <div className="items-center justify-center">
+          <div className="divider divider-start divider-neutral px-16 text-lg">
+            General quizzes
+          </div>
+
+          <div className="flex flex-col pl-64">
+            <div className="p-4 ">
+              <Link href="/quiz/beginner-general" passHref>
+                <div className="card w-4/5 cursor-pointer rounded-btn bg-teal-200 hover:bg-teal-300 transition-all">
+                  <div className="card-body text-yellow-900">
+                    <h2 className="card-title ">Beginner quiz</h2>
+                    <p>Train your note Identification skills</p>
+                  </div>
+                </div>
+              </Link>
             </div>
-          </Link>
+          </div>
+
+
+          <div className="flex flex-col pl-64">
+            <div className="p-4 ">
+              <Link href="/quiz/intermediate-general" passHref>
+                <div className="card w-4/5 cursor-pointer rounded-btn bg-violet-800 hover:bg-violet-900 transition-all">
+                  <div className="card-body text-yellow-400">
+                    <h2 className="card-title ">Intermediate quiz</h2>
+                    <p>Train your note Identification skills</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col pl-64">
+            <div className="p-4 ">
+              <Link href="/quiz/advanced-general" passHref>
+                <div className="card w-4/5 cursor-pointer rounded-btn bg-red-800 hover:bg-red-900 transition-all">
+                  <div className="card-body text-yellow-400">
+                    <h2 className="card-title ">Advanced Quiz</h2>
+                    <p>Train your note Identification skills</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="divider divider-start divider-neutral px-16 text-lg">
+            Topic based quiz
+          </div>
+
+          <div className="flex flex-col pl-64">
+            <div className="p-4 ">
+              <Link href="/quiz/pitchquiz" passHref>
+                <div className="card w-4/5 cursor-pointer rounded-btn bg-emerald-800 hover:bg-emerald-900 transition-all">
+                  <div className="card-body text-yellow-400">
+                    <h2 className="card-title ">Pitch quiz</h2>
+                    <p>Train your note Identification skills</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+{/*  */}
         </div>
-      </div>
-    </MaxWidthWrapper>
+      </MaxWidthWrapper>
+    </div>
   );
 };
 

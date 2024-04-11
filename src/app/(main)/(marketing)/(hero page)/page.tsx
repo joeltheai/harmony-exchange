@@ -17,7 +17,7 @@ export default function Home() {
           <Heading />
           <div className="mt-14 flex flex-row gap-8">
             <Button className="  flex flex-col bg-red-600 hover:bg-yellow-500">
-              <Link href="/signup">Get started</Link>
+              <Link href="/lessons">Get started</Link>
             </Button>
 
             <Link href="/about">

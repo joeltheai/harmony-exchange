@@ -40,7 +40,7 @@ const LessonsPage = () => {
 
   return (
     <MaxWidthWrapper>
-      <div className="mb-4 text-center"></div>
+      <div className="mb-12 text-center mt-12"></div>
       <div className="flex flex-wrap justify-center gap-20">
         {cardTitles.map((title, index) => (
           <div

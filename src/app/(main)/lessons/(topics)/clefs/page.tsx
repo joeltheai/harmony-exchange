@@ -31,7 +31,7 @@ const ClefsPage = () => {
         placements of the notes C and G on the staff. Keeping in mind the
         positions of C and G aids in interpreting the remaining notes on the
         staff, facilitating easier reading.
-      </p> 
+      </p>
       <Image
         src="/images/3.Clefs/1.Treble Clef.2.png"
         alt="Natural Notes"
@@ -165,6 +165,30 @@ const ClefsPage = () => {
         center of the staff, the tenor clef indicates the line where middle C
         falls.
       </p>
+
+      <Image
+        src="/images/3.Clefs/5.1.Tenor Clef.png"
+        alt="Natural Notes"
+        width={300}
+        height={218}
+        className="mb-4 rounded-box"
+      />
+
+      <p>
+        When comparing the notes in the tenor clef to those on the piano, pay
+        attention to the varying placements of the note C. Keeping track of the
+        position of C aids in interpreting the other notes on the staff more
+        easily.
+      </p>
+
+      <Image
+        src="/images/3.Clefs/5.2.Tenor Clef.png"
+        alt="Natural Notes"
+        width={700}
+        height={218}
+        className="mb-4 rounded-box"
+      />
+
       <p className="mb-4">
         The tenor clef has a limited scope. It is primarily used for cello,
         bassoon, and trombone. Often, however, either the treble clef or the
