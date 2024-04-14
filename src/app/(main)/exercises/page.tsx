@@ -15,7 +15,7 @@ const ExercisesPage = () => {
                 <div className="card w-4/5 cursor-pointer rounded-btn bg-red-800 hover:bg-red-900">
                   <div className="card-body text-yellow-400">
                     <h2 className="card-title ">Note reading</h2>
-                    <p>Train your note Identification skills</p>
+                    <p>Train your Note Identification skills</p>
                   </div>
                 </div>
               </Link>
@@ -23,11 +23,35 @@ const ExercisesPage = () => {
           </div>
           <div className="flex flex-col pl-64">
             <div className="p-4 ">
-              <Link href="/exercises/note-id" passHref>
+              <Link href="/exercises/key-id" passHref>
                 <div className="card w-4/5 cursor-pointer rounded-btn bg-red-800 hover:bg-red-900">
                   <div className="card-body text-yellow-400">
-                    <h2 className="card-title ">Note reading</h2>
-                    <p>Train your note Identification skills</p>
+                    <h2 className="card-title ">Key Signature Reading</h2>
+                    <p>Train your Key Identification skills</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-col pl-64">
+            <div className="p-4 ">
+              <Link href="/exercises/chord-id" passHref>
+                <div className="card w-4/5 cursor-pointer rounded-btn bg-red-800 hover:bg-red-900">
+                  <div className="card-body text-yellow-400">
+                    <h2 className="card-title ">Chord Reading</h2>
+                    <p>Train your Chord Identification skills</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-col pl-64">
+            <div className="p-4 ">
+              <Link href="/exercises/scale-id" passHref>
+                <div className="card w-4/5 cursor-pointer rounded-btn bg-red-800 hover:bg-red-900">
+                  <div className="card-body text-yellow-400">
+                    <h2 className="card-title ">Scale Reading</h2>
+                    <p>Train your Scale Identification skills</p>
                   </div>
                 </div>
               </Link>
