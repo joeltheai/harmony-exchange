@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     const { userId } = auth();
 
     const studentId = userId;
-    const { teacherId } = body;
+    const { teacherId,tName,Skill } = body;
     if (!teacherId) {
         return new NextResponse("Name is required", { status: 400 });
     }
@@ -25,6 +25,8 @@ export async function POST(req: Request) {
         data: {
             teacherId,
             studentId: userId!, // Add '!' to assert that userId is not null
+            tName,
+            Skill
         },
     });
 

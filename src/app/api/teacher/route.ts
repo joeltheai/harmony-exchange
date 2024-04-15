@@ -9,7 +9,18 @@ export async function POST(req: Request) {
 
     const body = await req.json();
 
-    const { name, skill, description } = body;
+    const {
+      name,
+      skill,
+      description,
+      email,
+      twitter,
+      instagram,
+      addi,
+      image1,
+      image2,
+      credentials,
+    } = body;
 
     if (!userId) {
       return new NextResponse("Unauthenticated", { status: 403 });
@@ -29,6 +40,14 @@ export async function POST(req: Request) {
         name,
         skill,
         description,
+        email,
+        twitter,
+        instagram,
+        addi,
+
+        image1,
+        image2,
+        credentials,
       },
     });
 
@@ -52,5 +71,3 @@ export async function GET(
     return new NextResponse("Internal error", { status: 500 });
   }
 }
-
-

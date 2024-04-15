@@ -10,7 +10,7 @@ import { currentUser } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" ">
       {/* here is a comment */}
       <div className=" mt-28 flex flex-col ">
         <div className=" flex flex-col items-center justify-center  text-center">
@@ -84,7 +84,7 @@ export default function Home() {
           </MaxWidthWrapper> */}
           <div className="mt-24"></div>
 
-          <ChatBubblesComp />
+          {/* <ChatBubblesComp /> */}
 
           {/* <Image
             className="mt-24"
@@ -94,7 +94,79 @@ export default function Home() {
             alt="logo_header"
           /> */}
 
-          <CascadingStuff />
+          <span className="flex-shrink mx-4 text-gray-700"> . </span> 
+          <span className="flex-shrink mx-4 text-gray-700"> -------------------------------------------------------------------- ♭ -------------------------------------------------------------------- </span>
+          <span className="flex-shrink mx-4 text-gray-700"> . </span> 
+
+          <div className= "justify-between gap-28 flex flex-row">
+          <p className = "text-justify ">
+          At Harmony Exchange, we believe that music is a universal <br></br>
+          online platform where aspiring musicians of all levels can <br></br>
+          access high-quality lessons, engaging exercises, and interactive <br></br>
+          learning experiences. We envision a world where music education is <br></br>
+          accessible to anyone, anywhere, fostering creativity, self-expression,<br></br>
+           and a deeper connection to the art form. Our goal is to empower <br></br>
+           students to develop their musical skills, build confidence, and  <br></br>
+           cultivate a lifelong passion for music. 
+          
+          </p>
+          <Image
+                src="/musicnotes.png"
+                alt="an image 3"
+                width={380}
+                height={380}
+                
+              />
+          
+          </div>
+          <span className="flex-shrink mx-4 text-gray-700"> . </span> 
+          <span className="flex-shrink mx-4 text-gray-700"> -------------------------------------------------------------------- ♭ -------------------------------------------------------------------- </span>
+          <span className="flex-shrink mx-4 text-gray-700"> . </span> 
+
+
+          <div className= "justify-between gap-56 flex flex-row">
+          <Image
+                src="/treble.png"
+                alt="an image 3"
+                width={150}
+                height={100}
+              />
+            <CascadingStuff />
+            <Image
+                src="/treble.png"
+                alt="an image 3"
+                width={150}
+                height={100}
+              />
+          </div>
+
+          <span className="flex-shrink mx-4 text-gray-700"> . </span> 
+          <span className="flex-shrink mx-4 text-gray-700"> -------------------------------------------------------------------- ♭ -------------------------------------------------------------------- </span>
+          <span className="flex-shrink mx-4 text-gray-700"> . </span> 
+
+
+          <div className= "justify-between gap-48 flex flex-row">
+          <Image
+                src="/palette.png"
+                alt="an image 4"
+                width={300}
+                height={100}
+              />
+          <p className = "text-right ">
+          At Harmony Exchange, we believe in the power of music to <br></br>
+          transcend boundaries and connect people from all walks of life. <br></br>
+          Whether you are a complete novice or a seasoned musician, our <br></br>
+          comprehensive resources cater to diverse interests and skill levels. <br></br>
+          From interactive lessons and tutorials to insightful articles and <br></br>
+          forums, we provide a wealth of educational materials designed to foster <br></br>
+          creativity and inspire growth. What sets Harmony Exchange apart is our <br></br>
+          emphasis on community engagement and collaboration. Through our <br></br>
+          innovative features, users can connect with like-minded individuals, <br></br>
+          share their musical creations, and receive constructive feedback from <br></br>
+          peers and experts alike.
+          
+          </p>
+          </div>
 
           {/* <a className="card title link link-accent">Im a simple link</a> */}
         </div>

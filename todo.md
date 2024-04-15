@@ -29,3 +29,25 @@
 - view current studentk
 - chat interface with student
 - end student session
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STuufffff
+- make the profile view better
+
+
+# student to view teacher
+- after bookin update student table

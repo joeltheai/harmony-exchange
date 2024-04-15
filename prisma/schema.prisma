@@ -18,6 +18,13 @@ model Teacher {
   userId      String  @unique
   name        String?
   skill       String
+  email       String
+  twitter     String
+  instagram   String
+  addi        String
+  image1      String
+  image2      String
+  credentials String
   isApproved  Boolean @default(false)
   description String
 }
@@ -26,12 +33,12 @@ model Student {
   id     String @id @default(uuid())
   userId String @unique
   name   String
-  
-
 }
 
-model bookings{
-  id          String  @id @default(uuid())
-  teacherId   String
-  studentId   String
+model bookings {
+  id        String @id @default(uuid())
+  teacherId String
+  studentId String 
+  tName      String
+  Skill     String
 }

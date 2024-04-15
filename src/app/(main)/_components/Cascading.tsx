@@ -6,7 +6,7 @@ const CascadingStuff = () => {
       <Image
         className="mt-24"
         src="/HarmonyExchange.png"
-        width={450}
+        width={400}
         height={350}
         alt="logo_header"
       />
@@ -22,21 +22,21 @@ const CascadingStuff = () => {
       <Image
         className=""
         src="/HarmonyExchange.png"
-        width={350}
+        width={400}
         height={350}
         alt="logo_header"
       />
       <Image
         className=""
         src="/HarmonyExchange.png"
-        width={300}
+        width={400}
         height={350}
         alt="logo_header"
       />
       <Image
         className=""
         src="/HarmonyExchange.png"
-        width={250}
+        width={400}
         height={350}
         alt="logo_header"
       />
