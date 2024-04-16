@@ -18,7 +18,9 @@ interface TeacherConnectClientProps {
   userId: string | null;
 }
 
-const TeacherConnectClient: React.FC<TeacherConnectClientProps> = ({ userId }) => {
+const TeacherConnectClient: React.FC<TeacherConnectClientProps> = ({
+  userId,
+}) => {
   const [teachers, setTeachers] = useState<Teacher[]>([]);
   const [selectedSkill, setSelectedSkill] = useState<string>("all");
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -47,7 +49,7 @@ const TeacherConnectClient: React.FC<TeacherConnectClientProps> = ({ userId }) =
   };
 
   const filteredTeachers = teachers.filter((teacher) =>
-    selectedSkill === "all" ? true : teacher.skill === selectedSkill
+    selectedSkill === "all" ? true : teacher.skill === selectedSkill,
   );
   return (
     <div className="flex justify-center">
@@ -65,13 +67,11 @@ const TeacherConnectClient: React.FC<TeacherConnectClientProps> = ({ userId }) =
             Here you can find teachers for your desired skill
           </div>
 
-              <Link href={`/teacher-connect/${userId}`} className="">
-                <button className="btn btn-outline btn-accent">
-                  Booked teachers 
-                </button>
-              </Link>
-
-
+          <Link href={`/teacher-connect/${userId}`} className="">
+            <button className="btn btn-outline btn-accent">
+              Booked teachers
+            </button>
+          </Link>
 
           {/* DaisyUI Select Dropdown for skill filtering */}
           <div className="form-control w-full max-w-xs">
@@ -105,14 +105,14 @@ const TeacherConnectClient: React.FC<TeacherConnectClientProps> = ({ userId }) =
                 .filter((teacher) => teacher.isApproved)
                 .map((teacher, index) => (
                   <Link href={`/teacher/${teacher.id}`} key={teacher.id}>
-                    <div className="card w-96 bg-lime-300 transition duration-300 ease-in-out hover:shadow-xl hover:bg-green-300">
+                    <div className="card w-96 bg-lime-300 transition duration-300 ease-in-out hover:bg-green-300 hover:shadow-xl">
                       {/* Card content */}
-                      <figure className="px-10 pt-10">
+                      <figure className=" relative mt-5 mx-5 h-[200px] w-[200px]">
                         <Image
                           src={teacher.image1}
                           alt={teacher.name}
-                          width={200}
-                          height={200}
+                          layout="fill"
+                          objectFit="cover"
                           className="rounded-xl"
                         />
                       </figure>
