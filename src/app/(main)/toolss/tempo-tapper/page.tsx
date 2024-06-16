@@ -39,7 +39,8 @@ const TempoTapper = () => {
         </div>
       </div>
       <button
-        onClick={handleTap}
+
+        onMouseDown={handleTap}
         className="btn btn-circle btn-primary btn-lg mb-4 mt-9  p-32 text-center "
       >
         TAP
